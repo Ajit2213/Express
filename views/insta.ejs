@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Instagram</title>
+</head>
+<body>
+
+    <h2>Instagram</h2>
+    <h3>Name:<%= data.username %>  &nbsp; &nbsp; <span><%= data.id %></span></h3>
+    <button>Followers</button> 
+    <button>Following</button>
+    <p> <% if (data.age>20) { %>
+     <h2>You can drive and vote</h2>
+    <% } %>  </p>
+    
+    <p>Follwers list</p>
+   
+
+    <% for( let index = 0; index < followers.length; index++ ) { %>
+        <li> <%= followers[index] %>  </li>
+    <% } %>
+</body>
+</html>
