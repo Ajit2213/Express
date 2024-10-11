@@ -45,3 +45,9 @@ app.listen(port,()=>{
 
 
 
+
+app.get("/im/:name",(req,res)=>{
+    let data=require("./data.json");
+    console.log(data);
+})
+
